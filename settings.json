@@ -1,0 +1,96 @@
+{
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.lineNumbers": "relative",
+    "workbench.statusBar.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "editor.fontSize": 17,
+    "window.customTitleBarVisibility": "auto",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+
+    // themes and styles
+    "workbench.iconTheme": "vscode-icons",
+
+    // formatters and linters
+    "editor.formatOnSave": true,
+
+    // custom hover settings
+    "editor.hover.delay": 10,
+
+    // cursor config
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.cursorStylePerMode.replace": "block",
+    "vim.cursorStylePerMode.visualblock": "block",
+    "vim.cursorStylePerMode.visualline": "block",
+
+    // vim configuration
+    "vim.leader": "<Space>",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // DEFAULTS
+        { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+        { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+        { "before": ["<C-c>"], "after": ["<Esc>"] },
+
+        // NAVIGATION
+        // switch buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        // splits for completely no reason
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+
+        {
+            "before": ["leader", "e", "f"],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.explorer.fileView.focus"
+            ]
+        },
+
+        // search functionality
+        {
+            "before": ["leader", "s", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["leader", "s", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+
+        // hover definition
+        {
+            "before": ["shift+k"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+
+        // quick fix
+        {
+            "before": ["leader", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        }
+    ],
+
+    // formatters
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "One Dark Pro Darker"
+}
