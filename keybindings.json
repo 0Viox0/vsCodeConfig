@@ -46,18 +46,37 @@
     {
         "key": "a",
         "command": "explorer.newFile",
-        "when": "explorerViewletFocus"
+        "when": "explorerViewletFocus && !inputFocus"
     },
     {
         "key": "d",
         "command": "deleteFile",
-        "when": "explorerViewletFocus"
+        "when": "explorerViewletFocus && !inputFocus"
     },
-
     {
         "command": "workbench.action.toggleSidebarVisibility",
         "key": "q",
-        "when": "explorerViewletFocus "
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.copy",
+        "key": "c",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "command": "filesExplorer.paste",
+        "key": "p",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "j",
+        "command": "list.focusDown",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "explorerViewletFocus && !inputFocus"
     },
 
     // terminal thingy
@@ -85,10 +104,30 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
+    {
+        "key": "shift+k",
+        "command": "list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "shift+j",
+        "command": "list.expandSelectionDown",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+    },
 
     // some resets
     {
         "key": "",
         "command": "-workbench.action.files.newUntitledFile"
+    },
+
+    // tabs
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.moveEditorRightInGroup"
     }
 ]
