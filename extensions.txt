@@ -1,3 +1,4 @@
+bradlc.vscode-tailwindcss
 burkeholland.simple-react-snippets
 dbaeumer.vscode-eslint
 dsznajder.es7-react-js-snippets

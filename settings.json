@@ -11,6 +11,8 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
 
+    "explorer.excludeGitIgnore": true,
+
     // themes and styles
     "workbench.iconTheme": "vscode-icons",
 
@@ -64,7 +66,12 @@
         },
         {
             "before": ["leader", "s", "g"],
-            "commands": ["workbench.action.findInFiles"]
+            "commands": ["workbench.action.gotoSymbol"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"],
+            "when": "editorHasSelection && editorTextFocus"
         },
 
         // hover definition
@@ -93,6 +100,18 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
     "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.activityBar.location": "hidden"
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.userWords": ["nums"],
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.activityBar.location": "hidden",
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
