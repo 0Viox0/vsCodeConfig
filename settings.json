@@ -4,14 +4,16 @@
     "editor.stickyScroll.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.lineNumbers": "relative",
-    "workbench.statusBar.visible": false,
-    "window.menuBarVisibility": "toggle",
     "editor.fontSize": 17,
-    "window.customTitleBarVisibility": "auto",
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
 
     "explorer.excludeGitIgnore": true,
+
+    // terminal
+    "terminal.integrated.fontSize": 16,
 
     // themes and styles
     "workbench.iconTheme": "vscode-icons",
@@ -31,6 +33,7 @@
     "vim.cursorStylePerMode.replace": "block",
     "vim.cursorStylePerMode.visualblock": "block",
     "vim.cursorStylePerMode.visualline": "block",
+    "editor.cursorSurroundingLines": 10,
 
     // vim configuration
     "vim.leader": "<Space>",
@@ -113,5 +116,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.activityBar.location": "hidden",
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.statusBar.visible": false,
+    "window.menuBarVisibility": "toggle"
 }

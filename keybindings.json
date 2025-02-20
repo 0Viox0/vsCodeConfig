@@ -79,6 +79,17 @@
         "when": "explorerViewletFocus && !inputFocus"
     },
 
+    // file explorer keybind
+    {
+        "key": "ctrl+h",
+        "command": "workbench.explorer.fileView.focus",
+        "when": "sideBarVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+
     // terminal thingy
     {
         "key": "ctrl+shift+a",
@@ -129,5 +140,9 @@
     {
         "key": "ctrl+alt+l",
         "command": "workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.closeEditorsToTheRight"
     }
 ]
