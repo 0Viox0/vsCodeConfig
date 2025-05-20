@@ -12,6 +12,12 @@
 
     "explorer.excludeGitIgnore": true,
 
+    // for tailwind
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "tailwindCSS.classFunctions": ["cva", "cx"],
+
     // terminal
     "terminal.integrated.fontSize": 16,
 
@@ -69,7 +75,7 @@
         },
         {
             "before": ["leader", "s", "g"],
-            "commands": ["workbench.action.gotoSymbol"]
+            "commands": ["workbench.view.search"]
         },
         {
             "before": ["g", "r"],
@@ -87,6 +93,12 @@
         {
             "before": ["leader", "c", "a"],
             "commands": ["editor.action.quickFix"]
+        },
+
+        // other
+        {
+            "before": ["leader", "r", "n"],
+            "commands": ["editor.action.rename"]
         }
     ],
 
@@ -111,13 +123,16 @@
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "cSpell.userWords": ["nums"],
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.activityBar.location": "hidden",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.statusBar.visible": false,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.activityBar.location": "hidden",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
