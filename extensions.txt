@@ -12,12 +12,9 @@ mrmlnc.vscode-scss
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-vscode.vscode-typescript-next
-mylesmurphy.prettify-ts
 onecentlin.laravel-blade
 orta.vscode-jest
 prisma.prisma
-streetsidesoftware.code-spell-checker
-streetsidesoftware.code-spell-checker-russian
 styled-components.vscode-styled-components
 usernamehw.errorlens
 vscode-icons-team.vscode-icons
