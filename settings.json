@@ -133,6 +133,5 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.activityBar.location": "hidden",
     "javascript.updateImportsOnFileMove.enabled": "always"
 }
